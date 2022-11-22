@@ -1,2 +1,34 @@
   [1m[35m (2100.5ms)[0m  [1m[35mCREATE DATABASE "greetings_rails_development" ENCODING = 'unicode'[0m
   [1m[35m (958.3ms)[0m  [1m[35mCREATE DATABASE "greetings_rails_test" ENCODING = 'unicode'[0m
+  [1m[35m (530.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (338.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2118731865829675320)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20221122110128)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (219.2ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221122110128"]]
+  [1m[36mTRANSACTION (16.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-22 14:22:24.413791"], ["updated_at", "2022-11-22 14:22:24.413791"]]
+  [1m[36mTRANSACTION (23.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2118731865829675320)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.5ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hello coders"], ["created_at", "2022-11-22 14:22:58.535701"], ["updated_at", "2022-11-22 14:22:58.535701"]]
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.8ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Welcome to Microverse"], ["created_at", "2022-11-22 14:22:58.559106"], ["updated_at", "2022-11-22 14:22:58.559106"]]
+  [1m[36mTRANSACTION (8.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.5ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hello from Burundi"], ["created_at", "2022-11-22 14:22:58.581511"], ["updated_at", "2022-11-22 14:22:58.581511"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.4ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Consistency is the key, hi coder!"], ["created_at", "2022-11-22 14:22:58.589646"], ["updated_at", "2022-11-22 14:22:58.589646"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.4ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "Hello from Burundi 🇧🇮"], ["created_at", "2022-11-22 14:22:58.600624"], ["updated_at", "2022-11-22 14:22:58.600624"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
