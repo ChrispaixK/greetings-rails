@@ -1,24 +1,48 @@
-# README
+# Hello-rails-back-end
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Back end app for hello rails react app , this repo is holding a separate app which only is about backend
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
 
-* System dependencies
+### Prerequisites
 
-* Configuration
+- Ruby runtime environment
+- Postgresql
+- Rails
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+- Clone this repository
+- Navigate to the folder using `Ingodo`
+- Use the following commands to
+    - install necessary gems `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Note 
+> This app has to be run on a specific port so that the frontend get data from it
 
-* Deployment instructions
+- Run `rails s -p 3001`
 
-* ...
+## Author
+
+👤 **Chrispaix Kaze**
+
+- GitHub: [@Chrispaix Kaze](https://github.com/ChrispaixK)
+- Twitter: [@Chrispaix Kaze](https://twitter.com/ChrispaixK)
+- LinkedIn: [Chrispaix Kaze](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse Inc
