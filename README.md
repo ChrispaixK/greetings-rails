@@ -26,6 +26,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Run `rails s -p 3001`
 
+## Link for the frontend App
+
+- [Hello-react-front-end](https://github.com/ChrispaixK/hello-react-front-end) 
+
 ## Author
 
 👤 **Chrispaix Kaze**
