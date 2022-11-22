@@ -337,3 +337,197 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 15ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3540)
 
 
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:02:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GreetingsApiController#index as HTML
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 5.5ms | Allocations: 8160)
+
+
+Started OPTIONS "/greetings_api" for ::1 at 2022-11-22 19:02:26 +0200
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/greetings_api"):
+  
+Started GET "/" for ::1 at 2022-11-22 19:27:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ck/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ck/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 49.7ms | Allocations: 528)
+Completed 200 OK in 242ms (Views: 107.6ms | ActiveRecord: 0.0ms | Allocations: 3605)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:28 +0200
+Processing by GreetingsApiController#index as HTML
+  [1m[36mGreeting Load (2.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 160ms (Views: 0.2ms | ActiveRecord: 19.9ms | Allocations: 6097)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:34 +0200
+Processing by GreetingsApiController#index as HTML
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 850)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:38 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:38 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:41 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 715)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:41 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:43 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:43 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 715)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:44 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 730)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:44 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:45 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 731)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:45 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.3ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 715)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:46 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:46 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 715)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:47 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.8ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:47 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:48 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:48 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:49 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:49 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 716)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:51 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 715)
+
+
+Started GET "/greetings_api" for ::1 at 2022-11-22 19:27:51 +0200
+Processing by GreetingsApiController#index as JSON
+  Parameters: {"greetings_api"=>{}}
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/greetings_api_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 716)
+
+
